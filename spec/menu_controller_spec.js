@@ -19,4 +19,10 @@ const MenuController = require("../controllers/MenuController");
     });
 
    });
+   describe("#remindMe", () => {
+     it("should return a string containing 'Learning is a life-long pursuit'", () => {
+       expect(this.menu.remindMe()).toBe("Learning is a life-long pursuit")
+     });
+   });
+
  });
